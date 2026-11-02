@@ -75,7 +75,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500">
-          <p>© {currentYear || 2026} Cheesy Bites. All rights reserved.</p>
+          <p>©  2026 Cheesy Bites. All rights reserved.</p>
           <p className="mt-2 sm:mt-0">Built with Next.js & Tailwind CSS 🚀</p>
         </div>
       </div>
