@@ -1,9 +1,16 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function Footer() {
-  const restaurantWhatsApp = '923159687096'; 
+  const [currentYear, setCurrentYear] = useState<number | null>(null);
+  const restaurantWhatsApp = '923159687096'; // Apna WhatsApp number yahan likhein
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="bg-gray-900 text-gray-300 pt-16 pb-8 border-t border-gray-800 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,7 +49,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold text-lg mb-4">Contact Us</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>📞 Phone / WhatsApp: +92 3159687096</li>
+              <li>📞 Phone / WhatsApp: +92 315 9687096</li>
               <li>📍 Location: Main Commercial Market, Pakistan</li>
               <li>🕒 Timing: 12:00 PM – 02:00 AM</li>
             </ul>
@@ -68,7 +75,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500">
-          <p>© {new Date().getFullYear()} Cheesy Bites. All rights reserved.</p>
+          <p>© {currentYear || 2026} Cheesy Bites. All rights reserved.</p>
           <p className="mt-2 sm:mt-0">Built with Next.js & Tailwind CSS 🚀</p>
         </div>
       </div>
