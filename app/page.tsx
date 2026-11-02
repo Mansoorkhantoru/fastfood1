@@ -1,5 +1,7 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+
 import { useState } from 'react';
 import Navbar from '../components/nav/Navbar';
 import HeroSlider from '@/components/home/Section1';
