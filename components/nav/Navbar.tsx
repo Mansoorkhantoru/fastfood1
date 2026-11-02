@@ -27,7 +27,7 @@ export default function Navbar({ cartCount, onCartClick }: NavbarProps) {
             />
           </div>
           <span className="text-2xl font-black tracking-tight text-gray-900 group-hover:text-red-600 transition">
-            CHEESY<span className="text-red-600">BITES</span>
+            NAWAB<span className="text-red-600">PIZZA</span>
           </span>
         </Link>
 
