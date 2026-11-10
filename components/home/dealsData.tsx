@@ -11,20 +11,28 @@ export interface FoodItem {
 
 export const foodItems: FoodItem[] = [
   {
-    id: 1,
-    title: 'Mega Family Deal 1',
-    category: 'deal',
-    price: 'Rs. 1,999',
+    id:1,
+    title:"Deal 1",
+    category:"deal",
+    price:"Rs. 600",
     image: '/images/hero3.webp',
-    description: '2 Large pizzas + 1.5L drink + large fries',
+    description: '1 Zinger burger + 1 Regular Fries + 1 regular Drink',
   },
   {
     id: 2,
-    title: 'Supreme Crown Pizza',
-    category: 'pizza',
-    price: 'Rs. 1,299',
+    title: 'Deal 2',
+    category: 'deal',
+    price: 'Rs. 800',
+    image: '/images/hero3.webp',
+    description: '2 Small Pizza + 0.5 Drink',
+  },
+  {
+    id: 3,
+    title: 'Deal 3',
+    category: 'deal',
+    price: 'Rs. 1,000',
     image: '/images/hero2.webp',
-    description: 'Freshly baked crust with extra cheese and chicken tikka.',
+    description: '1 Small Pizza + 1 Small Loaded Fries + 1 Zinger Burger + 0.5 Drink',
   },
   {
     id: 3,
@@ -48,6 +56,13 @@ export const foodItems: FoodItem[] = [
     price: 'Rs. 1,999',
     image: '/images/hero3.webp',
     description: '2 Large pizzas + 1.5L drink + large fries',
+  },{
+    id: 5,
+    title: 'Lifetime Specia',
+    category: 'pizza',
+    price: 'Rs. 1200',
+    image: '/images/hero3.webp',
+    description: '1 small pizza',
   }
   // Aap yahan apni baaki 34+ deals ishi tarah add kar sakte hain!
 ];
