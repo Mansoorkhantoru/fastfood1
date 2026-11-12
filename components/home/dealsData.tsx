@@ -3,7 +3,7 @@
 export interface FoodItem {
   id: number;
   title: string;
-  category: 'deal' | 'pizza' | 'burger' | 'party';
+  category: 'deal' | 'pizza' | 'burger' | 'wings';
   price: string;
   image: string;
   description: string;
@@ -15,24 +15,24 @@ export const foodItems: FoodItem[] = [
     title:"Deal 1",
     category:"deal",
     price:"Rs. 600",
-    image: '/images/hero3.webp',
+    image: '/images/deals/deal1.webp',
     description: '1 Zinger burger + 1 Regular Fries + 1 regular Drink',
   },
   {
     id: 2,
     title: 'Deal 2',
     category: 'deal',
-    price: 'Rs. 800',
-    image: '/images/hero3.webp',
-    description: '2 Small Pizza + 0.5 Drink',
+    price: 'Rs. 900',
+    image: '/images/deals/deal2.webp',
+    description: '1 Zinger burger + 1 Regular Fries + 1 regular Drink + 1 Chicken Piece',
   },
   {
     id: 3,
     title: 'Deal 3',
     category: 'deal',
     price: 'Rs. 1,000',
-    image: '/images/hero2.webp',
-    description: '1 Small Pizza + 1 Small Loaded Fries + 1 Zinger Burger + 0.5 Drink',
+    image: '/images/deals/deal3.webp',
+    description: '1 Small Pizza + 2 Zinger Burgers + 0.5 Drink',
   },
   {
     id: 3,
@@ -44,10 +44,10 @@ export const foodItems: FoodItem[] = [
   },
   {
     id: 4,
-    title: 'Birthday Party Combo',
-    category: 'party',
-    price: 'Rs. 4,999',
-    image: '/images/hero3.webp',
+    title: '12 pieces hot wings',
+    category: 'wings',
+    price: 'Rs. 1200',
+    image: '/images/wings/12pieceswings.webp',
     description: '4 Large pizzas, 6 zinger burgers, 2 big fries, and 2.25L drinks.',
   },{
     id: 4,
@@ -61,8 +61,14 @@ export const foodItems: FoodItem[] = [
     title: 'Lifetime Specia',
     category: 'pizza',
     price: 'Rs. 1200',
-    image: '/images/hero3.webp',
+    image: '/images/pizza/lifetimespecia.webp',
     description: '1 small pizza',
+  },{
+     id: 6,
+    title: 'Zinger cheese burger',
+    category: 'burger',
+    price: 'Rs. 400',
+    image: '/images/burger/zingercheeseburger.webp',
+    description: '',
   }
-  // Aap yahan apni baaki 34+ deals ishi tarah add kar sakte hain!
 ];

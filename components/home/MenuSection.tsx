@@ -15,7 +15,7 @@ interface MenuSectionProps {
 }
 
 export default function MenuSection({ isCartOpen, setIsCartOpen, setCartCount }: MenuSectionProps) {
-  const [activeCategory, setActiveCategory] = useState<'deal' | 'pizza' | 'burger' | 'party'>('deal');
+  const [activeCategory, setActiveCategory] = useState<'deal' | 'pizza' | 'burger' | 'wings'>('deal');
   const [cart, setCart] = useState<CartItem[]>([]);
 
   // Customer details state for cart checkout
@@ -23,7 +23,7 @@ export default function MenuSection({ isCartOpen, setIsCartOpen, setCartCount }:
   const [customerPhone, setCustomerPhone] = useState('');
   const [customerLocation, setCustomerLocation] = useState('');
 
-  const restaurantWhatsApp = '923159687096'; // Apna WhatsApp number yahan likhein
+  const restaurantWhatsApp = '923457509174'; // Apna WhatsApp number yahan likhein
 
   // Total items count for Navbar & Cart
   const totalCartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
@@ -110,7 +110,7 @@ export default function MenuSection({ isCartOpen, setIsCartOpen, setCartCount }:
           className="bg-green-600 hover:bg-green-700 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center cursor-pointer transition transform hover:scale-110 border-2 border-white"
           title="Chat on WhatsApp"
         >
-          <span className="text-2xl">💬</span>
+          <span className="text-2xl"><img src="/images/whatsapp.png" alt="" /></span>
         </a>
       </div>
 
@@ -238,14 +238,14 @@ export default function MenuSection({ isCartOpen, setIsCartOpen, setCartCount }:
           🍔 Burger
         </button>
         <button
-          onClick={() => setActiveCategory('party')}
+          onClick={() => setActiveCategory('wings')}
           className={`px-6 py-3 rounded-full font-bold text-base transition-all duration-200 cursor-pointer shadow-md ${
-            activeCategory === 'party'
+            activeCategory === 'wings'
               ? 'bg-red-600 text-white shadow-red-500/30 scale-105'
               : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
           }`}
         >
-          🎉 Party Packs
+          🎉 Wings
         </button>
       </div>
 
