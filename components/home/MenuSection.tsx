@@ -15,7 +15,7 @@ interface MenuSectionProps {
 }
 
 export default function MenuSection({ isCartOpen, setIsCartOpen, setCartCount }: MenuSectionProps) {
-  const [activeCategory, setActiveCategory] = useState<'deal' | 'pizza' | 'burger' | 'wings'>('deal');
+  const [activeCategory, setActiveCategory] = useState<'deal' | 'drinks' | 'burger' | 'fries'>('deal');
   const [cart, setCart] = useState<CartItem[]>([]);
 
   // Customer details state for cart checkout
@@ -23,7 +23,7 @@ export default function MenuSection({ isCartOpen, setIsCartOpen, setCartCount }:
   const [customerPhone, setCustomerPhone] = useState('');
   const [customerLocation, setCustomerLocation] = useState('');
 
-  const restaurantWhatsApp = '923457509174'; // Apna WhatsApp number yahan likhein
+  const restaurantWhatsApp = '923109782777'; // Apna WhatsApp number yahan likhein
 
   // Total items count for Navbar & Cart
   const totalCartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
@@ -215,17 +215,17 @@ export default function MenuSection({ isCartOpen, setIsCartOpen, setCartCount }:
               : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
           }`}
         >
-          🔥 Special Deals
+          🔥 BoomBoom  Deals
         </button>
         <button
-          onClick={() => setActiveCategory('pizza')}
+          onClick={() => setActiveCategory('drinks')}
           className={`px-6 py-3 rounded-full font-bold text-base transition-all duration-200 cursor-pointer shadow-md ${
-            activeCategory === 'pizza'
+            activeCategory === 'drinks'
               ? 'bg-red-600 text-white shadow-red-500/30 scale-105'
               : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
           }`}
         >
-          🍕 Pizza
+          🍹 Drinks
         </button>
         <button
           onClick={() => setActiveCategory('burger')}
@@ -238,14 +238,14 @@ export default function MenuSection({ isCartOpen, setIsCartOpen, setCartCount }:
           🍔 Burger
         </button>
         <button
-          onClick={() => setActiveCategory('wings')}
+          onClick={() => setActiveCategory('fries')}
           className={`px-6 py-3 rounded-full font-bold text-base transition-all duration-200 cursor-pointer shadow-md ${
-            activeCategory === 'wings'
+            activeCategory === 'fries'
               ? 'bg-red-600 text-white shadow-red-500/30 scale-105'
               : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
           }`}
         >
-          🎉 Wings
+          🎉 fries
         </button>
       </div>
 

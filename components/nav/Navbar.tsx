@@ -9,7 +9,7 @@ interface NavbarProps {
 }
 
 export default function Navbar({ cartCount, onCartClick }: NavbarProps) {
-  const restaurantWhatsApp = '923001234567'; // Apna WhatsApp number yahan likhein
+  const restaurantWhatsApp = '923109782777'; // Apna WhatsApp number yahan likhein
 
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
@@ -19,7 +19,7 @@ export default function Navbar({ cartCount, onCartClick }: NavbarProps) {
         <Link href="/" className="flex items-center gap-3 group">
           <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-red-600 shadow-md transition group-hover:scale-105">
             <Image
-              src="/images/hero1.webp"
+              src="/images/logo/boomboombbq.webp"
               alt="Restaurant Logo"
               fill
               sizes="48px"
@@ -27,7 +27,7 @@ export default function Navbar({ cartCount, onCartClick }: NavbarProps) {
             />
           </div>
           <span className="text-2xl font-black tracking-tight text-gray-900 group-hover:text-red-600 transition">
-            LIFETIME<span className="text-red-600">PIZZA</span>
+            BOOMBOOM<span className="text-red-600">BBQ</span>
           </span>
         </Link>
 

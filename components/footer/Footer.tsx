@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   const [currentYear, setCurrentYear] = useState<number | null>(null);
-  const restaurantWhatsApp = '923159687096'; // Apna WhatsApp number yahan likhein
+  const restaurantWhatsApp = '923109782777'; // Apna WhatsApp number yahan likhein
 
   useEffect(() => {
     setCurrentYear(new Date().getFullYear());
@@ -19,7 +19,7 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="space-y-4 md:col-span-1">
             <h3 className="text-2xl font-black tracking-tight text-white">
-              CHEESY<span className="text-red-600">BITES</span>
+              BOOMBOOM<span className="text-red-600">BBQ</span>
             </h3>
             <p className="text-sm text-gray-400 leading-relaxed">
               Serving the juiciest burgers, hot & cheesy pizzas, and mouth-watering deals right to your doorstep. Order instantly via WhatsApp!
@@ -49,7 +49,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold text-lg mb-4">Contact Us</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>📞 Phone / WhatsApp: +92 315 9687096</li>
+              <li>📞 Phone / WhatsApp: +92 3109782777</li>
               <li>📍 Location: Main Commercial Market, Pakistan</li>
               <li>🕒 Timing: 12:00 PM – 02:00 AM</li>
             </ul>
